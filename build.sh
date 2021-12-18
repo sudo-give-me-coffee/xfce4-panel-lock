@@ -1,7 +1,7 @@
 #!/bin/bash
 
-cat /etc/apt/sources.list
-exit
+sed -i 's| # deb-src |deb-src|g' /etc/apt/sources.list
+apt-get update
 
 apt-get build-dep xfce4-panel
 apt-get source xfce4-panel
