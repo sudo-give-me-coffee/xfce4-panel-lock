@@ -20,6 +20,13 @@ linha1=$(grep -n "^xfce_panel_plugin_button_press_event (GtkWidget      \*widget
 linha2=$(($(grep -n "gtk_menu_popup_at_pointer (menu, (GdkEvent \*) event);$" xfce-panel-plugin.c  | cut -d\: -f1)+1))
 sed -i "${linha1},${linha2}s/gtk_menu_popup_at_pointer (menu, (GdkEvent/\/\/ gtk_menu_popup_at_pointer (menu, (GdkEvent/" libxfce4panel/xfce-panel-plugin.c
 
+echo
+echo
+
+cat libxfce4panel/xfce-panel-plugin.c
+
+echo
+echo
 
 dpkg-buildpackage -b
 
