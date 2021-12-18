@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cat /etc/sources.list
+cat /etc/apt/sources.list
 exit
 
 apt-get build-dep xfce4-panel
