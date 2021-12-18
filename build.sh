@@ -18,7 +18,7 @@ linha2=$(grep -n "return plugin->priv->menu;" libxfce4panel/xfce-panel-plugin.c 
 sed -i "${linha1},${linha2}s/gtk_widget_show (item);/\/\/ gtk_widget_show (item);/" libxfce4panel/xfce-panel-plugin.c
 
 
-dpkg-buildpackage -us -uc
+dpkg-buildpackage -b
 
 cd ..
 
