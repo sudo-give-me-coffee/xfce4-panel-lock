@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sed -i 's| # deb-src |deb-src|g' /etc/apt/sources.list
+sed -i 's|# deb-src|deb-src|g' /etc/apt/sources.list
 
 cat /etc/apt/sources.list
 apt-get update
