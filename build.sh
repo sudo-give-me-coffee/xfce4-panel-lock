@@ -22,4 +22,4 @@ dpkg-buildpackage -us -uc
 
 cd ..
 
-ls
+tar -cvf xfce4-panel.tar *.deb
