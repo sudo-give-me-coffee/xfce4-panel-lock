@@ -22,4 +22,4 @@ dpkg-buildpackage -us -uc
 
 cd ..
 
-tar -cvf xfce4-panel.tar *.deb
+tar -cvf xfce4-panel.tar $(find . -type f)
